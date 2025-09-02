@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-footer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 30px;
+}
+.acc-footer{
+    /* padding: 1.2rem; */
+    overflow: hidden;
+    height: 2rem;
+    transition: all .3s ;
+    padding-bottom: 6px;
+   border-bottom: 2px solid #ebebeb;
+}
+.acc-footer-show{
+   height: 31rem;
+}
+.acc-footer i{
+    float: right;
+}
+.acc-footer h2{
+    font-size: 20px;
+    cursor: pointer;
+}
+.acc-footer a{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+        font-size: 17px;
+    font-weight: lighter;
+}
+
+/* for 3 */
+.acc-footer-3 i{
+    float: right;
+}
+.acc-footer-3 h2{
+    font-size: 20px;
+    cursor: pointer;
+}
+.acc-footer-3 a{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+        font-size: 17px;
+    font-weight: lighter;
+}
+
+.acc-footer-3{
+    /* padding: 1.2rem; */
+    overflow: hidden;
+    height: 2rem;
+    transition: all .3s ;
+    padding-bottom: 6px;
+   border-bottom: 2px solid #ebebeb;
+}
+
+.acc-foote-show-3{
+   height: 26rem;
+
+}
+
+/* for 4 */
+.acc-footer-4 i{
+    float: right;
+}
+.acc-footer-4 h2{
+    font-size: 20px;
+    cursor: pointer;
+}
+.acc-footer-4 a{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+        font-size: 17px;
+    font-weight: lighter;
+}
+
+.acc-footer-4{
+    /* padding: 1.2rem; */
+    overflow: hidden;
+    height: 2rem;
+    transition: all .3s ;
+    padding-bottom: 6px;
+   border-bottom: 2px solid #ebebeb;
+}
+
+.acc-foote-show-4{
+   height: 19rem;
+
+}
+
+/* for 5 and 6 */
+.acc-footer-56 i{
+    float: right;
+}
+.acc-footer-56 h2{
+    font-size: 20px;
+    cursor: pointer;
+}
+.acc-footer-56 a{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+        font-size: 17px;
+    font-weight: lighter;
+}
+
+.acc-footer-56{
+    /* padding: 1.2rem; */
+    overflow: hidden;
+    height: 2rem;
+    transition: all .3s ;
+    padding-bottom: 6px;
+   border-bottom: 2px solid #ebebeb;
+}
+
+
+.acc-foote-show-56{
+   height: 15rem;
+
+}
+
