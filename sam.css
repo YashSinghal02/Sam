@@ -341,6 +341,7 @@ font-weight: 200 !important;
     font-size: 14px;
     font-weight: 600;
     transition: all .3s linear;
+    color: black !important;
 }
 
 .learn-more-btn button:hover{
@@ -349,7 +350,8 @@ border-bottom: 2px solid;
 }
 
 .pre-oder-btn button{
-    border: 2px solid black;
+    border: 2px solid black ;
+    color: black ;
     background-color: transparent;
       font-size: 14px;
     font-weight: 500;
@@ -361,8 +363,8 @@ border-bottom: 2px solid;
 
 .pre-oder-btn button:hover{
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255) ;
+    color: rgb(0, 0, 0) ;
 }
 
 /* Watch Hero For Mobile */
@@ -391,7 +393,8 @@ border-bottom: 2px solid;
 }
 
 .btn-phn button{
-  border: 2px solid black;
+  border: 2px solid black !important;
+  color: black !important;
     background-color: transparent;
       font-size: 16px;
     font-weight: 500;
@@ -412,7 +415,8 @@ border-bottom: 2px solid;
     font-size: 16px;
     font-weight: 600;
     transition: all .3s linear;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid black !important;
+    color: black !important;
 }
 
 .btn-watch button:hover{
@@ -711,15 +715,25 @@ border-bottom: 2px solid white;
 }
 
 /*  */
+.hight-txt2 {
+    margin-top: 550px;
+}
+.hight-txt2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
  .latest {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin: 50px auto;
+    margin: 50px auto 50px auto;
     max-width: 100%;
     overflow-x: hidden;
 }
+
+
 
 
         .card-item {
@@ -1027,7 +1041,7 @@ border-bottom:2px solid #ebebeb ;
     justify-content: space-around;
     flex-direction: row;
     list-style: none;
-    gap: 20px;
+    gap: 12px;
 }
 .footer-nav-ul .footer-nav-li .footer-nav-a{
 text-decoration: none;
@@ -1062,6 +1076,7 @@ transition: all .3s linear;
     gap:15px
 }
 .last-icons i{
+    color: black;
 font-size: 27px;
 cursor: pointer;
 transition: all .3s linear;
@@ -1220,7 +1235,7 @@ color: black !important;
       display: flex;
       align-items: center;
       gap: 10px;
-      z-index: 9999; /* stays on top */
+      z-index: 5; /* stays on top */
     }
     .chat-message {
       background: white;
@@ -1372,6 +1387,456 @@ color: black !important;
 
 
  /* OFFER Count Down Ends  */
+
+ /* Highlight sliders Start */
+.silder-wrap{
+    margin: 50px 0;
+    position: absolute;
+    width: 98%;
+    /* top: 10%; */
+    left: 2%;
+    height: 380px;
+    /* border: 1px solid; */
+    cursor: grab;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;/* IE and Edge */
+    scrollbar-width: none;/* Fire fox */
+}
+.slider::-webkit-scrollbar{
+    display: none; /* Hide scroll bar for chrome,opera */
+}
+
+
+.slider-inner{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3200px;
+}
+.item{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 300px;
+    height: 83%;
+    top: 1%;
+    /* border: 1px solid; */
+   background-color: #f8f8f8;
+   border-radius: 5px;
+
+}
+.item img{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all .3s linear;
+    overflow: hidden;
+}
+.item img:hover{
+    transform: scale(1.09);
+}
+.progress-descriptions{
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: -24%;
+    
+}
+.progress-descriptions p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 14px 0;
+}
+.outer-progessbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-progess-bar{
+      position: absolute;
+    bottom: -24%;
+    right: 12%;
+    cursor: pointer;
+}
+.arrow-progess-bar i{
+    padding: 8px 8px;
+    background-color: white;
+    border: 1px dotted black;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.progess-bar{
+    position: absolute;
+    bottom: -20%;
+    left: 20%;
+    width: 40%;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.progress-bar-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+}
+
+ 
+ /* Highlight sliders End */
+/* ============================ */
+
+ /* Highlight sliders Start */
+.silder-wrap2{
+    margin: 50px 0;
+    position: absolute;
+    width: 98%;
+    /* top: 10%; */
+    left: 2%;
+    height: 380px;
+    /* border: 1px solid; */
+    cursor: grab;
+}
+.slider2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;/* IE and Edge */
+    scrollbar-width: none;/* Fire fox */
+}
+.slider2::-webkit-scrollbar{
+    display: none; /* Hide scroll bar for chrome,opera */
+}
+
+
+.slider-inner2{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2200px;
+}
+.item2{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 350px;
+    height: 89%;
+    top: 1%;
+    /* border: 1px solid; */
+   background-color: #f8f8f8;
+   border-radius: 5px;
+   overflow: hidden;
+
+}
+.item2 img{
+    width:100%;
+    height: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    transition: all .3s linear;
+    overflow: hidden;
+}
+.item2 img:hover{
+    transform: scale(1.09);
+}
+.progress-descriptions2{
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    bottom: -24%;
+    
+}
+.progress-descriptions2 p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 14px 0;
+}
+.outer-progessbar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow-progess-bar2{
+      position: absolute;
+    bottom: -24%;
+    right: 12%;
+    cursor: pointer;
+}
+.arrow-progess-bar2 i{
+    padding: 8px 8px;
+    background-color: white;
+    border: 1px dotted black;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.progess-bar2{
+    position: absolute;
+    bottom: -20%;
+    left: 20%;
+    width: 40%;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.progress-bar-inner2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+}
+
+ 
+ /* Highlight sliders End */
+
+  /* Hambuger-hide for JS - Base Mobile First */
+        .hamburger-hide{
+             background-color: rgb(255, 255, 255);
+            /* backdrop-filter: blur(15px); */
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            height: 100vh;
+         right: -100%;
+            top: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-direction: column;
+            transition: all .6s linear;
+            overflow: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .hamburger-show{
+        right: 0;
+        }
+        .search-right-nav{
+            display: flex;
+            align-content: center;
+        justify-content: center;
+        width: 100%;
+        }
+
+        .nav-right-flex-seacrh{
+            display: flex;
+            align-content: center;
+        justify-content: center;
+        margin-top: 12px;
+        gap: 5px;
+        width: 100%;
+        position: relative;
+        }
+        .nav-right-input{
+        position: relative;
+        flex: 1;
+        }
+
+        .blnk-search-input-right-nav{
+        padding: 13px 50px 13px 45px;
+        border-radius: 40px;
+        border: 2px dotted transparent;
+        outline: none;
+        width: 85%;
+        box-sizing: border-box;
+        background-color: #f7f7f7;
+        }
+        .blnk-search-input-right-nav:focus-within{
+         border: 2px dotted black;
+        }
+        .search-right-nav-icon{
+        text-align: center;
+        font-size: 20px;
+        position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .cut-nav-icon{
+            font-size: 30px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        /* 2nd */
+        .nav-right-txt{
+            margin: 10px 0 5px 0;
+            width: 100%;
+        }
+        .login-nav{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .why-sam{
+            margin: 20px 0;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        /* 3rd */
+        .nav-shop-right{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #E8F2FF;
+            padding: 15px;
+            border-radius: 12px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .shop-nav-right{
+        font-size: 20px;
+        font-weight: 600;
+        }
+        .shop-sam-nav-right{
+        font-size: 13px;
+        font-weight: 200;
+        }
+        .txt-right-nav-img{
+            width: 80px;
+            height: auto;
+        }
+        .txt-right-nav-img img{
+            width: 100%;
+            height: 100%;
+        }
+        /* 4th part */
+        .samsung-product-nav-right{
+            display: flex;
+            align-items: center;
+            justify-content: space-around !important;
+            gap: 10px;
+            text-align: center;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .samsung-product-first{
+            width: 120px;
+            height: auto;
+            transition: all .3s linear;
+            padding: 10px;
+        }
+        .samsung-product-first:hover{
+            cursor: pointer;
+            outline: 2px dotted black;
+        }
+        .samsung-product-first p{
+        font-weight: 600;
+        font-size: 14px;
+        }
+        .samsung-product-first img{
+            width: 100%;
+            height: 100%;
+        }
+
+ /* Accordion Top */
+.accordian-hamburger{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+}
+
+        .accordian-top{
+            /* ebebeb */
+            border-bottom: 2px solid #ddd;
+        }
+  
+        .accordian-top:nth-last-child(1){
+             border-bottom: none !important;
+        }
+        .accordian-item-top{
+            padding: 5px 10px;
+        }
+        .accordian-item-top:active{
+         outline: 2px dotted black;
+        }
+        .accordain-content-top{
+            padding:3px 10px;
+            background-color: rgba(255, 255, 255, 0.905);
+            height: 0;
+            overflow: hidden;
+            transition: all .3s linear;
+        }
+        .top-down-arrow{
+            float: right;
+            font-size: 25px;
+        }
+        .accordain-content-top a{
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+        font-size: 17px;
+    font-weight: lighter;
+        }
+        .accordian-top-a{
+            text-decoration: none;
+            color: black;
+
+        }
+        .tilt-arrow{
+            transform: rotate(45deg);
+        }
+         
+        .backdrop {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0,0,0,0.6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 90;
+            display: none;
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+        
+        .backdrop.show {
+            display: block;
+            opacity: 1;
+        }
+        
+
+/* /Ened ACCordian */
+
+
+
+
 
 
 
@@ -1588,7 +2053,12 @@ height: 750px;
 }
 }
 
+@media only screen and (min-width: 531px) {
+            .hamburger-hide {
+                width: 60%;        
+                }
 
+        }
 
 @media only screen and (min-width: 535px)
 {
@@ -1934,6 +2404,9 @@ height: 940px;
 .hight-txt h2{
     font-size: 40px;
 }
+    .hight-txt2 h2 {
+        font-size: 40px;
+    }
         
 }
 
@@ -2013,6 +2486,36 @@ height: 1000px;
 }
         
 }
+
+    @media only screen and (min-width: 768px) {
+        /* hamburger All */
+            .hamburger-hide {
+                width: 40%;
+                padding: 20px;
+            }
+            
+            .samsung-product-nav-right {
+                justify-content: space-between !important;
+                gap: 15px;
+            }
+            
+            .samsung-product-first {
+                width: 140px;
+            }
+            
+            .acc-footer-top h2 {
+                font-size: 19px;
+            }
+            
+            .acc-footer-top a {
+                font-size: 17px;
+            }
+            
+            .nav-shop-right {
+                padding: 18px;
+            }
+        }
+
 
 
 @media only screen and (min-width: 769px)
@@ -2122,6 +2625,9 @@ font-weight: 600;
     .hight-txt h2{
     font-size: 50px;
 }
+.hight-txt2 h2 {
+        font-size: 50px;
+    }
    
 }
 
@@ -2309,6 +2815,30 @@ font-weight: 600;
  
 
 }
+
+  @media only screen and (min-width: 1024px) {
+    /* Hamburger All */
+            .hamburger-hide {
+                /* width: 45%; */
+                padding: 20px;
+            }
+            
+            .samsung-product-first {
+                width: 150px;
+            }
+            
+            .txt-right-nav-img {
+                width: 100px;
+            }
+            
+            .shop-nav-right {
+                font-size: 22px;
+            }
+            
+            .shop-sam-nav-right {
+                font-size: 14px;
+            }
+        }
 
 
 @media only screen and (min-width: 1050px)
@@ -2622,6 +3152,24 @@ font-size: 28px;
         max-width: 700px;
       }
 
+    /* Hamburger All */
+            .hamburger-hide {
+                width: 35%;
+                padding: 35px;
+            }
+            
+            .samsung-product-first {
+                width: 160px;
+            }
+            
+            .acc-footer-top h2 {
+                font-size: 20px;
+            }
+            
+            .blnk-search-input-right-nav {
+                padding: 15px 60px 15px 50px;
+            }
+
 
 }
 
@@ -2759,5 +3307,42 @@ font-weight: 600;
 .Copyright-txt {
       margin:40px 40px 0 40px;
 }
+    .hight-txt2 h2 {
+        font-size: 45px;
+        font-weight: bold;
+    }
 
 }
+
+  @media only screen and (min-width: 1600px) {
+        /* Hamburger All */
+
+            .hamburger-hide {
+                width: 30%;
+                padding: 40px;
+            }
+            
+            .samsung-product-first {
+                width: 180px;
+            }
+            
+            .img-text-crd {
+                width: 200px;
+                height: 70px;
+            }
+            
+            .txt-right-nav-img {
+                width: 120px;
+            }
+        }
+
+           @media only screen and (min-width: 1920px) {
+            .hamburger-hide {
+                width: 25%;
+                padding: 45px;
+            }
+            
+            .samsung-product-first {
+                width: 200px;
+            }
+        }

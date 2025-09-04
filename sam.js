@@ -1,3 +1,150 @@
+// Hamburger start
+
+function Hamburger(){
+    document.querySelector(".hamburger-hide").classList.toggle("hamburger-show");
+    document.querySelector(".backdrop").classList.toggle("show");
+}
+
+  let questions=document.querySelectorAll(".accordian-item-top");
+console.log(questions)
+        questions.forEach((question)=>{
+          console.log(question)
+          question.addEventListener("click",()=>{
+        // When something is next to the element use nextElementSibling (or previousElementSibling) because you’re looking for a sibling element at the same level.
+           const item= question.nextElementSibling;
+           console.log(item)
+        if(item.style.height){
+            item.style.height=null
+        }
+        else{
+            item.style.height=item.scrollHeight + "px"
+        }
+
+          })
+
+        })
+
+// Hamburger End
+
+
+// Highlight sliders Start2
+let silder2=document.querySelector(".slider-inner2");
+let progressBar2=document.querySelector(".progress-bar-inner2");
+let prevBtn2 = document.getElementById("prevBtn2");
+let nextBtn2 = document.getElementById("nextBtn2");
+
+let sliderGrabed2=false;
+
+silder2.parentElement.addEventListener('scroll',(e)=>{
+    console.log(scrollBar())
+    progressBar2.style.width=`${scrollBar2()}%`
+})
+
+silder2.addEventListener('mousedown',(e)=>{
+    sliderGrabed2=true;
+    silder2.style.cursor="grabbing"
+})
+
+silder2.addEventListener('mouseup',(e)=>{
+    sliderGrabed2=false;
+    silder2.style.cursor="grab"
+})
+
+silder2.addEventListener('mouseleave',(e)=>{
+    sliderGrabed2=false;
+    silder2.style.cursor="grab"
+})
+
+// PRogess bar
+silder2.addEventListener('mousemove',(e)=>{
+    if(sliderGrabed){
+        silder2.parentElement.scrollLeft -=e.movementX
+    }
+})
+
+  // Arrow button functionality
+        prevBtn2.addEventListener('click', () => {
+             silder2.parentElement.scrollLeft -= 300;
+        });
+
+        nextBtn2.addEventListener('click', () => {
+             silder2.parentElement.scrollLeft += 300;
+        });
+
+
+silder2.addEventListener('wheel',(e)=>{
+    e.preventDefault()
+        silder2.parentElement.scrollLeft +=e.deltaY
+    
+})
+
+
+function scrollBar2(){
+    return((silder2.parentElement.scrollLeft / (silder2.parentElement.scrollWidth-silder2.parentElement.clientWidth)) * 100)
+}
+
+// Highlight sliders End2
+
+
+// Highlight sliders Start
+let silder=document.querySelector(".slider-inner");
+let progressBar=document.querySelector(".progress-bar-inner");
+let prevBtn = document.getElementById("prevBtn");
+let nextBtn = document.getElementById("nextBtn");
+
+let sliderGrabed=false;
+
+silder.parentElement.addEventListener('scroll',(e)=>{
+    console.log(scrollBar())
+    progressBar.style.width=`${scrollBar()}%`
+})
+
+silder.addEventListener('mousedown',(e)=>{
+    sliderGrabed=true;
+    silder.style.cursor="grabbing"
+})
+
+silder.addEventListener('mouseup',(e)=>{
+    sliderGrabed=false;
+    silder.style.cursor="grab"
+})
+
+silder.addEventListener('mouseleave',(e)=>{
+    sliderGrabed=false;
+    silder.style.cursor="grab"
+})
+
+// PRogess bar
+silder.addEventListener('mousemove',(e)=>{
+    if(sliderGrabed){
+        silder.parentElement.scrollLeft -=e.movementX
+    }
+})
+
+  // Arrow button functionality
+        prevBtn.addEventListener('click', () => {
+             silder.parentElement.scrollLeft -= 300;
+        });
+
+        nextBtn.addEventListener('click', () => {
+             silder.parentElement.scrollLeft += 300;
+        });
+
+
+silder.addEventListener('wheel',(e)=>{
+    e.preventDefault()
+        silder.parentElement.scrollLeft +=e.deltaY
+    
+})
+
+
+function scrollBar(){
+    return((silder.parentElement.scrollLeft / (silder.parentElement.scrollWidth-silder.parentElement.clientWidth)) * 100)
+}
+
+// Highlight sliders End 
+
+
 // Offer Count Down Start
     function countDown() {
       const futureDate = new Date("September 30, 2025 12:00:00").getTime();
@@ -106,7 +253,7 @@ const popUp = () => {
 
 // let Show=setTimeout(popUp,2000)
 let Show=setTimeout(() => {
-    popUp()
+    // popUp()
 },2000)
 
 
