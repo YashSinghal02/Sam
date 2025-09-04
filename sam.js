@@ -253,7 +253,7 @@ const popUp = () => {
 
 // let Show=setTimeout(popUp,2000)
 let Show=setTimeout(() => {
-    // popUp()
+    popUp()
 },2000)
 
 
