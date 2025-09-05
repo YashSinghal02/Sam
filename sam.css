@@ -84,8 +84,8 @@ input[type="search"]:focus
 .cart i{
     font-size: 22px;
  }
-
  .person i{
+    color: black;
     font-size: 22px;
  }
 /* Shop-menu */
@@ -1696,8 +1696,14 @@ color: black !important;
             width: 100%;
         }
         .login-nav{
+            color: black;
             font-size: 16px;
             font-weight: bold;
+        }
+        .login-nav:active{
+            text-decoration:underline;
+            text-decoration-color:black ;
+            color: black;
         }
         .why-sam{
             margin: 20px 0;

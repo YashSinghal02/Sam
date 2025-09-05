@@ -1,0 +1,217 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "SamsungOne", Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f4f6f9;
+    }
+.cut-icon {
+  position: absolute;
+    top: 70px;
+    left: 10px;
+  z-index: 10;
+}
+
+.cut-icon i {
+      background-color: #333;
+    color: white;
+    font-size: 18px;
+    height: 35px;
+    width: 35px;
+    padding: 9px 9px;
+    border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cut-icon i:hover {
+  background-color: #555;
+}
+    .signup-form {
+        position: relative;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      display: flex;
+      overflow: hidden;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .inner-first {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .logo {
+      width: 160px;
+      margin: 0 auto ;
+    }
+
+    .logo img {
+      width: 100%;
+    }
+
+    .account h2 {
+      font-weight: 700;
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #000;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #dcdcdc;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      margin-top: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    form input:focus {
+      border-color: #007aff;
+      box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.15);
+    }
+
+    /* Default hidden */
+    .error-text, .success-text {
+      font-size: 13px;
+      font-weight: 600;
+      display: none;
+      margin-top: 4px;
+    }
+
+    .error-text {
+      color: red;
+    }
+
+    .success-text {
+      color: green;
+    }
+
+    /* Show states */
+    .show-error {
+      display: block;
+    }
+
+    .show-success {
+      display: inline;
+    }
+
+    .eye-icon {
+      position: absolute;
+      right: 12px;
+      top: 36px;
+      cursor: pointer;
+      color: #777;
+    }
+
+    .password {
+      position: relative;
+    }
+
+    input[type="submit"] {
+      padding: 12px;
+      background-color: #007aff;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #005bb5;
+    }
+
+    .brand-imgs {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px 0;
+    }
+
+    .first-brand {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1.5px solid #ccc;
+      border-radius: 32px;
+      padding: 10px 15px;
+      margin: 0 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .first-brand:hover {
+      background: #f4f6f9;
+    }
+
+    .first-brand img {
+      width: 20px;
+    }
+
+    .already-account {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .already-account h6 {
+      font-size: 15px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .already-account b {
+      color: #007aff;
+      cursor: pointer;
+    }
+
+    .inner-second {
+      display: none;
+      flex: 1;
+    }
+
+    .inner-second img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (min-width: 768px) {
+      .inner-second {
+        display: block;
+      }
+    }
+    @media only screen and (min-width:1050px) {
+        .cut-icon {
+  position: absolute;
+    top: 30px;
+    left: 10px;
+  z-index: 10;
+}
+    }

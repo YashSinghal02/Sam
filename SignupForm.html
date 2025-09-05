@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Signup Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+<link rel="stylesheet" href="SignupForm.css">
+ 
+</head>
+<body>
+  <div class="signup-form">
+    <div class="inner-first">
+        <div class="cut-icon">
+            <a href="index.html"> <i class="fa-solid fa-xmark"></i></a>
+        </div>
+      <div class="logo">
+        <img src="Samsung Black Wordmark.png" alt="">
+      </div>
+
+      <div class="account">
+        <h2>Create an Account</h2>
+      </div>
+
+      <form onsubmit="submitClick(event)">
+        <!-- Name -->
+        <label>
+          Name
+          <input type="text" name="name" oninput="nameCheck()">
+          <span class="error-text name-error">Name must be 3–30 alphabetic characters</span>
+          <span class="success-text name-success">✔</span>
+        </label>
+
+        <!-- Phone -->
+        <label>
+          Phone
+          <input type="tel" name="phone" oninput="phoneCheck()">
+          <span class="error-text phone-error">Phone must be 10 digits starting with 6–9</span>
+          <span class="success-text phone-success">✔</span>
+        </label>
+
+        <!-- Email -->
+        <label>
+          Email
+          <input type="email" name="email" oninput="emailCheck()">
+          <span class="error-text email-error">Enter a valid email address</span>
+          <span class="success-text email-success">✔</span>
+        </label>
+
+        <!-- Password -->
+        <label class="password">
+          Password
+          <input type="password" name="password" id="password" oninput="passwordCheck()">
+          <i class="fa-solid fa-eye eye-icon"
+             onmousedown="showPassword()" 
+             onmouseup="hidePassword()"></i>
+          <span class="error-text password-error">Password must be 8+ chars, 1 uppercase, 1 lowercase, 1 digit, 1 symbol</span>
+          <span class="success-text password-success">✔</span>
+        </label>
+
+        <input type="submit" value="Register">
+      </form>
+
+      <!-- Social signup -->
+      <div class="brand-imgs">
+        <div class="first-brand"><img src="apple-logo.png" alt=""> Apple</div>
+        <div class="first-brand"><img src="google.png" alt=""> Google</div>
+      </div>
+
+      <div class="already-account">
+        <h6>Already have an account? <b>Sign In</b></h6>
+      </div>
+    </div>
+
+    <div class="inner-second">
+      <img src="work-home-concept-design.png" alt="">
+    </div>
+  </div>
+
+<script src="SignupForm.js"></script>
+</body>
+</html>
